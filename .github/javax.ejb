@@ -1,0 +1,8 @@
+import javax.ejb.Singleton;
+
+@Singleton
+public class SingletonEjbExample {
+    public String sayHi() {
+        return "Hi, I'm Singleton EJB!";
+    }
+}
