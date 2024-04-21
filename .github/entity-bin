@@ -1,0 +1,16 @@
+@Entity // Делает данный класс Entity бином
+@Table(name = "employee") // "Связывает" данный класс с таблицей employee в БД
+public class Employee implements Serializable {
+
+    @Id // Говорит о том, что поле ниже является первичным ключом
+    @GeneratedValue(strategy = GenerationType.AUTO) // Определяет тип генерации значе-ний первичного ключа
+    private int id;
+
+    @Column(name="name") // "Связывает" поле ниже с полем name в таблице employee в БД
+    private String name;
+
+    @Column (name="age") // "Связывает" поле ниже с полем age в таблице employee в БД
+    private int age;
+
+    // getters and setters...
+}
