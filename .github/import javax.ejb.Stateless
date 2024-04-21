@@ -1,0 +1,6 @@
+@Stateless
+public class DemoEJB {
+    public String helloWorld() {
+        return "Hello world!";
+    }
+}
