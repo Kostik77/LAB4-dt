@@ -1,0 +1,11 @@
+@WebServlet("/helloWorld")
+public class DemoServlet extends HttpServlet {
+
+    @EJB
+    private DemoEJB ejb;
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletEx-ception, IOException {
+        resp.getWriter().write(ejb.helloWorld());
+    }
+}
